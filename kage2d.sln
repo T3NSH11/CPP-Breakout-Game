@@ -19,7 +19,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "base_with_physics_test", "p
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "enemy_sandbox", "projects\enemy_sandbox\enemy_sandbox.vcxproj", "{81F549A0-5E01-4895-9028-0B9F886CE50B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "game", "projects\game\game.vcxproj", "{0004F485-DCE5-499D-A6EA-15ADF375E03D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "game", "projects\game\base.vcxproj", "{0004F485-DCE5-499D-A6EA-15ADF375E03D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
