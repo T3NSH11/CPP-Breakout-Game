@@ -99,15 +99,15 @@ bool Example::start()
 void Example::update(float deltaT)
 {
 	ball.move(ballsx, ballsy);
-	int i = 0;
-	if (i == 100)
-	{
-		i = 0;
-	}
 
-	if (ball.getGlobalBounds().intersects(sprites[i++].sprite.getGlobalBounds()))
+	for (size_t i = 0; i < 99; i++)
 	{
-		ballsy = -ballsy;
+		if (ball.getGlobalBounds().intersects(sprites[i].sprite.getGlobalBounds()) && sprites[i].destroyed == 0)
+		{
+			ballsy = -ballsy;
+			sprites[i].sprite.setColor(sf::Color::Transparent);
+			sprites[i].destroyed == 1;
+		}
 	}
 
 	if (ball.getGlobalBounds().intersects(bordertop.getGlobalBounds()) | ball.getGlobalBounds().intersects(playerblock.getGlobalBounds()))

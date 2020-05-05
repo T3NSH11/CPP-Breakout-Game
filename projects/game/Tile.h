@@ -5,5 +5,6 @@ class Tile
 public:
 	int id = 0;
 	sf::Sprite sprite;
+	int destroyed = 0;
 };
 
