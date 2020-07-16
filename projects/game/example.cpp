@@ -107,6 +107,7 @@ void Example::update(float deltaT)
 			ballsy = -ballsy;
 			sprites[i].sprite.setColor(sf::Color::Transparent);
 			sprites[i].destroyed == 1;
+			std::cout << i << std::endl;
 		}
 	}
 
